@@ -6,15 +6,10 @@ This Repository refers to the Final Project of the course [Neural Networks for D
 
 ## Dataset
 
-The dataset chosen for this homework is [**Corn and Maize Leaf Disease Dataset**](https://www.kaggle.com/datasets/smaranjitghose/corn-or-maize-leaf-disease-dataset) from kaggle. The authors of this dataset created it using the PlantVillage and PlantDoc datasets. In this dataset we have 4188 images divided into four classes, representing some of the different states the plant leaf can be in:
-
-* Common Rust - 1306 images
-* Gray Leaf Spot - 574 images
-* Blight -1146 images
-* Healthy - 1162 images
+The dataset chosen for this homework is [**Cards Image**](https://www.kaggle.com/datasets/gpiosenka/cards-image-datasetclassification) from kaggle. It consist of 7624 training images, 265 test images and 265 validation images with 53 different categories (a 'normal' French deck, look at the joker card into the test set). Each image is an rgb image and the particularity of these cards is that they are all very different from each other both in design and with respect to contrasts.
 
 
-The idea of using this dataset stems from my interest in plants. Moreover, maize being a plant used all over the world, the ability to recognise diseases promptly can avoid unpleasant scenarios.
+The idea of using this dataset is because usually the neural network try to predict values in small range in this case we have 53 different categories.
 
 The task is Image Classification.
 
@@ -26,11 +21,11 @@ Since my dataset is not stored separately in train/validation/test i did it myse
 
 ## First Model : CNN
 
-I decided to use a Convolutional neural network with 4 convolutional block, a global average pooling layer and a classification block. Each convolutional block is made in this way:
+I decided to use a convolutional neural network with 4 convolutional blocks of different sizes, a flattening layer and a classification block. Each convolutional block is composed by:
 
-* 2D convolutional layer
-* Batch Normalization
-* Relu as activaction function
-* Max pooling layer
+*Convolutional layer
+*Batch Normalization
+*ReLu
+Max Polooing 2D
 
-I decided to plot the loss and accuracy curves both for the training and validation set. We can see how, even after only a few epochs, the model immediately begins to perform well. The model manages to achieve good results in both loss and accuracy. The best model has an accuarcy of 91,5% in the validation set and a value of 89,5% in the test set.
+In addition I've included some regularization.
