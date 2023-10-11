@@ -23,9 +23,9 @@ Since my dataset is not stored separately in train/validation/test i did it myse
 
 I decided to use a convolutional neural network with 4 convolutional blocks of different sizes, a flattening layer and a classification block. Each convolutional block is composed by:
 
-*Convolutional layer
-*Batch Normalization
-*ReLu
-Max Polooing 2D
+*  Convolutional layer
+*  Batch Normalization
+*  ReLu
+*  Max Polooing 2D
 
 In addition I've included some regularization.
