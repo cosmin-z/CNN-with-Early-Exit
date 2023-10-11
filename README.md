@@ -29,3 +29,6 @@ I decided to use a convolutional neural network with 4 convolutional blocks of d
 *  Max Polooing 2D
 
 In addition I've included some regularization.
+
+## Second model : CNN
+In the second part of the homework, there is a NN created from scratch. The idea here is to create a modular network by adding some early exists (More detail in the notebook)
